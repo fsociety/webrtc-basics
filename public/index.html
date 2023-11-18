@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <title>Webrtc Basics</title>
+</head>
+<body>
+    <div class="buttons">
+        <button id="start-webcam">Start Webcam</button>
+        <button id="create-offer">CreateOffer</button>
+        <button id="create-answer">CreateAnswer</button>
+        <button id="addAnswer">addAnswer</button>
+        <button id="hangup">hangup</button>
+    </div>
+    <div class="videos">
+        <video id="local-video" autoplay playsinline muted></video>
+        <video id="remote-video" autoplay playsinline></video>
+    </div>
+    <div class="input-container">
+        <div>
+            <label for="offer-textarea">offerSDP</label>
+            <textarea id="offer-textarea"></textarea>
+        </div>
+        <div>
+            <label for="answer-textarea">answerSDP</label>
+            <textarea id="answer-textarea"></textarea>
+        </div>
+    </div>
+<script src="js/main.js"></script>
+</body>
+</html>
